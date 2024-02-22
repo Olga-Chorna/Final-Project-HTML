@@ -1,0 +1,78 @@
+.footer {
+  max-width: $projectFullScreen;
+  background-color:$backgroundLight;
+
+  // .footer_container
+
+  &_container {
+    max-width: $sectionContainer;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    border-bottom: $borderGray;
+    display: flex;
+    gap: 43px;
+    justify-content: space-between;
+  }
+
+  // .footer__rights
+
+  &__rights {
+    margin: 0 auto;
+    padding: 30px 0;
+    p{
+      font-family: $font;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 21px;
+      text-align: center;
+      color: #999999;
+    }
+  }
+}
+.container__title{
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+span, a {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #999999;
+
+}
+
+.footer ul li:not(:first-child){
+  margin-top: 30px;
+  // якщо розкометувати код то він запрацює для всіх елементів крім першого
+  // &::marker{
+  //  content: '>';
+  //  font-family: 'Montserrat';
+  //  font-weight: 400;
+  //  font-size: 14px;
+  //  line-height: 22px;
+  //  color: #999999;
+  //  margin-right: 10px;
+}
+
+.link li{
+  // а тут чомусь не спрацьовує
+  &::marker{
+    content: '>';
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+    margin-right: 10px;
+}
+}
+
+
+
